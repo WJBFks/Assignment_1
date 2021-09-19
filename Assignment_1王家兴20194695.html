@@ -132,6 +132,7 @@
 			height: 100vh;
 			background-color: rgb(255, 255, 255);
 			overflow-y: auto;
+			scroll-behavior: smooth;
 		}
 
 		#right #nav {
@@ -209,6 +210,11 @@
 
 		#right #side-bar .item:hover {
 			color: #ee0000;
+			text-decoration: none;
+		}
+
+		#right #side-bar a:hover {
+			text-decoration: none;
 		}
 
 		#right #article {
@@ -224,6 +230,27 @@
 			line-height: 50px;
 			text-align: center;
 			color: #666;
+		}
+
+		#right #side-bar #to-top {
+			position: absolute;
+			right: 100px;
+			bottom: 60px;
+			height: 50px;
+			width: 50px;
+			background-color: #eee;
+			box-shadow: #ccc 3px 3px 3px, #fff -3px -3px 3px;
+			text-align: center;
+			padding-top: 16px;
+			border-radius: 5px;
+		}
+
+		#right #side-bar #to-top:hover {
+			box-shadow: #ccc 1px 1px 1px, #fff -1px -1px 1px;
+		}
+
+		#right #side-bar #to-top:active {
+			box-shadow: #ccc 0px 0px 0px, #fff -0px -0px 0px;
 		}
 	</style>
 	<body>
@@ -287,18 +314,33 @@
 			</div>
 			<div id="main">
 				<div id="side-bar">
-					<div class="item">Cocos Creator v2.4用户指南</div>
-					<div class="item">特别推荐</div>
-					<div class="item">总导读</div>
-					<div class="item">视频教程</div>
-					<div class="item">演示和范例项目</div>
+					<a href="#yhsc">
+						<div class="item">Cocos Creator v2.4用户指南</div>
+					</a>
+					<a href="#tbtj">
+						<div class="item">特别推荐</div>
+					</a>
+					<a href="#zdd">
+						<div class="item">总导读</div>
+					</a>
+					<a href="#spjc">
+						<div class="item">视频教程</div>
+					</a>
+					<a href="#ys">
+						<div class="item">演示和范例项目</div>
+					</a>
+					<a href="#nav-left">
+						<div id="to-top" type="button">
+							<img src="./img/top.png" />
+						</div>
+					</a>
 				</div>
 				<div id="article">
-					<h1>Cocos Creator v2.4 用户手册</h1>
+					<h1 id="yhsc">Cocos Creator v2.4 用户手册</h1>
 					<p>欢迎使用 Cocos Creator 用户手册！本手册包括详尽的使用说明、面向不同职能用户的工作流程和 step by step 的新手教程。
 						能够帮您快速掌握使用 Cocos Creator 开发跨平台游戏的方法。</p>
 					<p class="tip"><span style="font-weight: 600;">注意</span>：请在右上角根据您使用的 Cocos Creator 版本选择相应的手册版本。</p>
-					<h1>特别推荐</h1>
+					<h1 id="tbtj">特别推荐</h1>
 					<ul>
 						<li>从 v2.4.2 开始，Cocos Creator 支持发布到 字节跳动小游戏。</li>
 						<li>从 v2.4.1 开始，Cocos Creator 支持发布到 HUAWEI AppGallery Connect 和 连尚小游戏。</li>
@@ -323,7 +365,7 @@
 						<li>v2.0 升级指南</li>
 						<li>从 v1.10 开始，Cocos Creator 对底层资源类型进行了重构，绝大多数项目不受影响，但有些项目可能会收到一些警告，详情请查阅 v1.10 资源升级指南。</li>
 					</ul>
-					<h1>总导读</h1>
+					<h1 id="zdd">总导读</h1>
 					<ul>
 						<li><a href="">Cocos Creator 入门</a></li>
 						<li><a href="">资源工作流程</a></li>
@@ -341,9 +383,9 @@
 						<li><a href="">进阶主题</a></li>
 						<li><a href="">SDK 集成</a></li>
 					</ul>
-					<h1>视频教程</h1>
+					<h1 id="spjc">视频教程</h1>
 					<p>前往视频教程页面</p>
-					<h1>演示和范例项目</h1>
+					<h1 id="ys">演示和范例项目</h1>
 					<ul>
 						<li><span style="font-weight: 600;">范例集合</span>（GitHub | Gitee）：从基本的组件到交互输入，这个项目里包括了 case by
 							case 的功能点用法介绍。</li>
@@ -359,7 +401,7 @@
 				</div>
 			</div>
 			<div id="footer">
-				By 王家兴 20194695 （页面参考自<a href="https://docs.cocos.com/" target="_blank">Cocos Creator v2.4 用户手册</a> ）
+				By 王家兴 20194695 （页面参考自<a href="https://docs.cocos.com/" target="_blank">Cocos Creator v2.4 用户手册</a> ） <a href="https://github.com/WJBFks/Assignment_1/">GitHub</a>
 			</div>
 		</div>
 	</body>
